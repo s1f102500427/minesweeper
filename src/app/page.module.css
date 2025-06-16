@@ -15,3 +15,27 @@
   background: url('~/src/assets/images/icons.png') no-repeat;
   border: 1px solid black;
 }
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ccc;
+  border: 2px solid #999;
+  box-shadow:
+    inset -2px -2px 0 #fff,
+    inset 2px 2px 0 #777;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(9, 30px);
+  grid-template-columns: repeat(9, 30px);
+  background: #eef;
+  border: 1px solid #ccc;
+}
