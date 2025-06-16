@@ -78,9 +78,9 @@ export default function Home() {
       {/* ⑤ CSS Grid で BOARD_SIZE 列に並べる */}
       <div
         className={styles.board}
-        style={{
-          gridTemplateColumns: `repeat(${BOARD_SIZE}, 30px)`,
-        }}
+        // style={{
+        //   gridTemplateColumns: `repeat(${BOARD_SIZE}, 30px)`,
+        // }}
       >
         {board.map((row, r) =>
           row.map((cell, c) => (
